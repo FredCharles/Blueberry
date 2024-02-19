@@ -2,113 +2,235 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlueBerry Web Agency</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3523/3523388.png" type="image/png">
+    
+    <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a href="index.html"><img class="logo" src="images/Blueberry-Logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#services"><strong>Services</strong></a>
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </div>
-                </div>
-            </div>
+    <!-- header design -->
+    <header class="header">
+       
+        <a href="index.html"><img class="logo" src="images/Blueberry-Logo.png"></a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#about">À Propos</a>
+            <a href="#services">Solutions</a>
+            <a href="#portfolio">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
+        
     </header>
 
-    <main id="contain" class="neve-main" role="main">
-        <div class="container">
-            <div class="accueil row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h1>Votre Succès
-                        en Ligne Commence Avec Nous
-                    </h1>
-                    <p>
-                        Transformez Votre Vision en Réalité Numérique,
-                        Découvrez Comment Notre Agence Réinvente Votre Présence en Ligne!
-                    </p>
-                    <a href="#services"><button class="btn-1">Découvrir</button></a>
-                </div>
+    <!-- home section design -->
+    <section class="home" id="home">
+      
+        <div class="home-content">
+            <h1>Votre Succès
+                en Ligne Commence Avec Nous
+            </h1>
+           
+            <!--<h3>And I'm a <span class="multiple-text"></span></h3>-->
+            <p>
+                Transformez Votre Vision en Réalité Numérique,
+                Découvrez Comment Notre Agence Réinvente Votre Présence en Ligne!
+            </p>
+           <!-- <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>-->
+            <a href="#services" class="btn">Découvrir</a>
+        </div>
 
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+       
+        
+    </section>
 
-                <div class="design col-sm-12 col-md-6 col-lg-4">
-                    <div class="img">
-                        <img class="img-design" src="images/19362653-removebg-preview.png">
-                    </div>
-                </div>
+    <!-- about section design -->
+    <section class="about" id="about">
+  
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">À Propos de <span style="font-weight: 700">Blueberry</span></h2>
+            <h3>Web Agency.</h3>
+            <p>Chez <strong>Blueberry Web Agency</strong>, nous croyons en la puissance de la créativité et de l'innovation pour transformer les idées en réalité. Notre mission est d'aider les entreprises à réussir en ligne en leur offrant des solutions web sur mesure, conçues pour répondre à leurs besoins spécifiques.</p>
+            
+            <h3>Notre Engagement envers l'Excellence</h3>
+            <p>Fondée en 2024, Blueberry Web Design s'est rapidement imposée comme une agence de design web de premier plan, reconnue pour son expertise technique et sa créativité sans limites. Notre équipe passionnée de designers, de développeurs et de stratèges web travaille avec dévouement pour offrir à nos clients des solutions web de qualité supérieure qui se démarquent dans un marché numérique en constante évolution.</p>
+            
+            <h3>Notre Approche Collaborative</h3>
+            <p>Nous croyons en une approche collaborative et axée sur le client, où chaque projet est une collaboration entre notre équipe et la vôtre. Nous nous engageons à comprendre vos objectifs commerciaux et à concevoir des solutions web qui non seulement répondent à vos besoins actuels, mais qui anticipent également vos besoins futurs.</p>
+            
+            <h3>Notre Vision pour l'Avenir</h3>
+            <p>Chez Blueberry Web Design, nous sommes animés par une vision audacieuse de l'avenir du web. Nous nous efforçons d'être à la pointe de l'innovation et de rester à l'affût des dernières tendances technologiques pour offrir à nos clients des solutions web innovantes et performantes qui les aident à prospérer dans un monde numérique en constante évolution.</p>
+            
+        </div>
+       
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h1 class="heading">Nos Solutions</h1>
+        
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-wordpress'></i>
+                <h3>CMS</h3>
+                <p> Nous travaillons avec WordPress en raison de sa polyvalence, de sa fiabilité et de sa facilité d'utilisation. Voici quelques raisons pour lesquelles nous préférons WordPress pour nos clients :
+                </p>
+                <a href="#contact" class="btn">Voir plus</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-block' ></i>
+                <h3>Programmation</h3>
+                <p>Nous travaillons avec une variété de langages de programmation pour nos clients en fonction de leurs besoins spécifiques et des exigences de leurs projets. Voici quelques raisons pour lesquelles nous utilisons différents langages de programmation :
+                </p>
+                <a href="#contact" class="btn">Voir plus</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-bar-chart-square' ></i>
+                
+                <h3>SEO</h3>
+                <p>Blueberry Web Agency met en œuvre des stratégies SEO pour ses clients afin d'optimiser leur visibilité en ligne et d'améliorer leur classement dans les résultats de recherche. Voici pourquoi nous considérons le SEO comme une composante essentielle de nos services :
+                </p>
+                <a href="#contact" class="btn">Voir plus</a>
             </div>
         </div>
-    </main>
+        
+    </section>
 
-    <section class="services" id="services">
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Nos <span>Services</span></h2>
 
-        <div class="container">
-            <div class="row">
-                <h1>Nos Services</h1>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="illustrator">
-                        <img class="illus" src="images/personne-travaillant-html-ordinateur (2).jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Conception et développement de sites Web sur mésure.</h3>
-                        <p>Création de sites web personnalisés adaptés aux besoins
-                            et aux objectifs spécifiques de chaque client.
-                        </p>
-                    </div>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/servie%201.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Conception et développement de sites Web sur mésure.</h4>
+                    <p>Création de sites web personnalisés adaptés aux besoins
+                        et aux objectifs spécifiques de chaque client.
+                    </p>
+                    <a href="#contact"><i class='bx bx-link-external'></i></a>
                 </div>
-                
-                                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="illustrator">
-                        <img class="illus" src="images/technologie-assistance-technique-reparation-concept_53876-165268.jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Maintenance et support technique.</h3>
-                        <p>Fourniture des services de maintenance réguliers pour garantir que les sites web restent sécurisés,
-                            fonctionnent correctement et sont à jour avec les dernières technologies.
-                        </p>
-                    </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/service 2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Maintenance et support technique.</h4>
+                    <p>Fourniture des services de maintenance réguliers pour garantir que les sites web restent sécurisés, fonctionnent correctement et sont à jour avec les dernières technologies.
+                    </p>
+                    <a href="#contact"><i class='bx bx-link-external'></i></a>
                 </div>
-                
-                                <div class="col- col-sm-12 col-md-6 col-lg-4">
-                    <div class="illustrator">
-                        <img class="illus" src="images/Design sans titre (3).png">
-                    </div>
-                    <div class="text">
-                        <h3>Création de sites Web Responsives.</h3>
-                        <p>Développement des sites web qui s’adapent automatiquement
-                            à différents appareils et taille d’écran, offrant ainsi une expérience
-                            utilisateur optimale sur desktop, tablette et mobile.
-                        </p>
-                    </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/service%203.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Création de sites Web Responsives.</h4>
+                    <p>Développement des sites web qui s’adapent automatiquement à différents appareils et taille d’écran, offrant ainsi une expérience utilisateur optimale sur desktop, tablette et mobile.
+                    </p>
+                    <a href="#contact"><i class='bx bx-link-external'></i></a>
                 </div>
-                <div class="trait"></div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/service 4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Optimisation pour les Moteurs de Recherche (SEO) </h4>
+                    <p>Nous optimisons votre site web pour les moteurs de recherche afin d'améliorer sa visibilité et son classement dans les résultats de recherche. De la recherche de mots-clés à l'optimisation du contenu, nous mettons en œuvre des stratégies SEO efficaces pour augmenter le trafic organique vers votre site.
+                    </p>
+                    <a href="#contact"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/service%205.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Refonte de Site Web</h4>
+                    <p>La refonte de site web est essentielle pour maintenir la pertinence et l'efficacité de votre présence en ligne. Chez Blueberry Web Design, nous proposons des services de refonte de site web pour moderniser et optimiser votre site existant, en lui donnant une nouvelle vie et en maximisant son impact.
+                    </p>
+                    <a href="#contact"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/service%206.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Formation et Assistance aux Clients</h4>
+                    <p>Nous proposons une formation personnalisée pour chaque client, adaptée à leurs besoins spécifiques et à leur niveau de compétence. Que vous soyez novice ou expérimenté, nous vous fournirons les connaissances nécessaires pour gérer efficacement votre site web.
+                    </p>
+                    <a href="#contact"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact" action="process-form.php" method="post">
+        <h1 class="heading">Nous <span>Contacter</span></h1>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Envoyer" class="btn">
+        </form>
+    </section>
+    
+
+    <!-- footer design -->
+    <footer class="footer">
+       <a href="index.html"><img class="logo" src="images/Blueberry-Logo.png"></a>
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 Blueberry Web Agency | Tous droits Réservés.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
 
-    <footer>
-       <a href="index.html"><img class="logo" src="images/Blueberry-Logo.png"></a>
-        <p>&copy; 2024 Blueberry Web Design. Tous droits réservés.</p>
-    </footer>
 </html>
