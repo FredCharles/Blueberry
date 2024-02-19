@@ -61,14 +61,14 @@ section {
 }
 
 .header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    border-bottom: 0rem solid rgba(0, 0, 0, .1);
 }
 
 
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 1.8rem;
     transition: .3s;
     text-align: center;
     text-decoration: none;
@@ -76,9 +76,14 @@ section {
         
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover
+{
     color: var(--main-color);
+    background: var(--second-bg-color);
+    box-shadow: 1 5 1rem var(--text-color);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    text-decoration: underline;
 }
 
 #menu-icon {
